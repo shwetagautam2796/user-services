@@ -46,3 +46,7 @@ group :development do
   # gem "spring"
 end
 
+
+gem "concurrent-ruby", "= 1.3.4"
+
+gem "devise", "~> 4.9"
