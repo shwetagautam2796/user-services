@@ -51,3 +51,4 @@ gem "concurrent-ruby", "= 1.3.4"
 
 gem "devise", "~> 4.9"
 gem 'devise-jwt'
+gem 'rack-cors'
