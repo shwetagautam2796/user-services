@@ -44,6 +44,12 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'capistrano', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false  # If using rbenv
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-puma', require: false   # If using Puma
+  gem 'capistrano-postgresql', require: false  # If using PostgreSQL
 end
 
 
