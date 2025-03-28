@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 # ssh -i ~/.ssh/first_key_paire.pem ec2-user@51.21.181.96
-server '13.49.145.183', user: 'ec2-user', roles: %w{app db web}
+server '13.49.145.183', user: 'ubuntu', roles: %w{app db web}
 set :rails_env, 'staging'
 set :deploy_to, -> { "/var/www/lp2_#{fetch(:rails_env)}" }
 set :branch, :main
