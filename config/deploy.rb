@@ -9,7 +9,7 @@ append :linked_files, "config/database.yml", "config/master.key", "config/secret
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :rbenv_type, :user
 set :rbenv_ruby, '3.2.2'
-set :rbenv_custom_path, '/usr/bin/rbenv'
+set :rbenv_custom_path, '~/.rbenv'
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 
