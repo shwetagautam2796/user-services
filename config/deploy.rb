@@ -7,9 +7,9 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 append :linked_files, "config/database.yml", "config/master.key", "config/secrets.yml"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :rbenv_type, :user
+set :rbenv_type, :system
+set :rbenv_custom_path, '/usr/bin/rbenv'
 set :rbenv_ruby, '3.2.2'
-set :rbenv_custom_path, '~/.rbenv'
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 
