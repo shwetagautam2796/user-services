@@ -10,6 +10,8 @@ append :linked_files, "config/database.yml", "config/master.key", "config/secret
 set :rbenv_type, :user
 set :rbenv_path, fetch(:rbenv_path, '~/.rbenv') # Ensure Capistrano looks in the correct place
 set :rbenv_ruby, '3.2.2'
+set :default_env, { RBENV_ROOT: '~/.rbenv', PATH: '~/.rbenv/bin:~/.rbenv/shims:$PATH' }
+
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 
