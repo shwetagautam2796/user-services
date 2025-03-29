@@ -8,7 +8,7 @@ append :linked_files, "config/database.yml", "config/master.key", "config/secret
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :rbenv_type, :user
-set :rbenv_path, fetch(:rbenv_path, '~/.rbenv') # Ensure Capistrano looks in the correct place
+set :rbenv_path, fetch(:rbenv_path, '~/.rbenv')
 set :rbenv_ruby, '3.2.2'
 set :default_env, { RBENV_ROOT: '~/.rbenv', PATH: '~/.rbenv/bin:~/.rbenv/shims:$PATH' }
 
