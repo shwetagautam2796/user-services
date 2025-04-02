@@ -44,6 +44,13 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-rbenv-install'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma'
+  gem 'capistrano-sidekiq'
 end
 
 
