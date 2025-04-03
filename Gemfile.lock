@@ -299,6 +299,7 @@ DEPENDENCIES
   devise (~> 4.9)
   devise-jwt
   jsonapi-serializer
+  logger
   pg (~> 1.1)
   puma (~> 5.0)
   rack-cors
