@@ -7,6 +7,8 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 server '13.53.79.55', user: 'ubuntu', roles: %w{web app db}
+set :rails_env, 'staging'
+set :rake, 'bundle exec rake'
 set :stage, :staging
 # role-based syntax
 # ==================
