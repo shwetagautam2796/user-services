@@ -10,6 +10,7 @@ server '13.53.79.55', user: 'ubuntu', roles: %w{web app db}
 set :rails_env, 'staging'
 set :rake, 'bundle exec rake'
 set :stage, :staging
+set :default_env, { 'RAILS_ENV' => 'staging' }
 # role-based syntax
 # ==================
 
